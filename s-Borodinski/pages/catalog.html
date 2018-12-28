@@ -6,13 +6,16 @@
 	<title>Магазин</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a href="index.html" class="main-header-logo">
+			<a href="../index.html" class="main-header-logo">
 				<img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
 			</a>
 			<ul class="site-navigation">
@@ -39,7 +42,60 @@
 
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<!-- TODO секция выбора -->
+			<form action="https://echo.htmlacademy.ru" method="GET" class="filter">
+				<fieldset>
+					<legend>Производители</legend>
+					<ul>
+						<li class="filter-option">
+							<input type="checkbox" name="baxter-of-california" class="visually-hidden filter-input filter-input-checkbox" id="filter-baxter-of-california"
+							 checked>
+							<label for="filter-baxter-of-california">Baxter of California</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="mr-natty" class="visually-hidden filter-input filter-input-checkbox" id="filter-mr-natty">
+							<label for="filter-mr-natty">Mr Natty</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="suavecito" class="visually-hidden filter-input filter-input-checkbox" id="filter-suavecito"
+							 checked>
+							<label for="filter-suavecito">Suavecito</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="malin-goetz" class="visually-hidden filter-input filter-input-checkbox" id="filter-malin-goetz">
+							<label for="filter-malin-goetz">Malin+Goetz</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="murrays" class="visually-hidden filter-input filter-input-checkbox" id="filter-murrays">
+							<label for="filter-murrays">Murray's</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="american-crew" class="visually-hidden filter-input filter-input-checkbox" id="filter-american-crew"
+							 checked>
+							<label for="filter-american-crew">American Crew</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Группы товаров</legend>
+					<ul>
+						<li class="filter-option">
+							<input type="radio" name="product-group" class="visually-hidden filter-input filter-input-radio" value="shaving"
+							 id="filter-shave">
+							<label for="filter-shave">Бритвенные принадлежности</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" name="product-group" class="visually-hidden filter-input filter-input-radio" value="hair-care"
+							 id="filter-care" checked>
+							<label for="filter-care">Средства для ухода</label>
+						</li>
+						<li class="filter-option">
+							<input type="radio" name="product-group" class="visually-hidden filter-input filter-input-radio" value="accessories"
+							 id="filter-accessories">
+							<label for="filter-accessories">Средства для ухода</label>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
 		</section>
 
 		<section class="catalog">
@@ -54,7 +110,7 @@
 					</h3>
 					<p class="catalog-item-image">
 						<a href="catalog-item.html">
-							<img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий">
+							<img src="../img/cat-product-1.jpg" width="220" height="165" alt="Набор для путешествий">
 						</a>
 					</p>
 					<p class="catalog-item-price">
@@ -71,7 +127,7 @@
 					</h3>
 					<p class="catalog-item-image">
 						<a href="catalog-item.html">
-							<img src="img/product-2.jpg" width="220" height="165" alt="Набор для путешествий">
+							<img src="../img/cat-product-2.jpg" width="220" height="165" alt="Набор для путешествий">
 						</a>
 					</p>
 					<p class="catalog-item-price">
@@ -88,7 +144,7 @@
 					</h3>
 					<p class="catalog-item-image">
 						<a href="catalog-item.html">
-							<img src="img/product-3.jpg" width="220" height="165" alt="Набор для путешествий">
+							<img src="../img/cat-product-3.jpg" width="220" height="165" alt="Набор для путешествий">
 						</a>
 					</p>
 					<p class="catalog-item-price">
@@ -105,7 +161,7 @@
 					</h3>
 					<p class="catalog-item-image">
 						<a href="catalog-item.html">
-							<img src="img/product-4.jpg" width="220" height="165" alt="Набор для путешествий">
+							<img src="../img/cat-product-4.jpg" width="220" height="165" alt="Набор для путешествий">
 						</a>
 					</p>
 					<p class="catalog-item-price">
@@ -122,7 +178,7 @@
 					</h3>
 					<p class="catalog-item-image">
 						<a href="catalog-item.html">
-							<img src="img/product-5.jpg" width="220" height="165" alt="Набор для путешествий">
+							<img src="../img/cat-product-5.jpg" width="220" height="165" alt="Набор для путешествий">
 						</a>
 					</p>
 					<p class="catalog-item-price">
@@ -139,7 +195,7 @@
 					</h3>
 					<p class="catalog-item-image">
 						<a href="catalog-item.html">
-							<img src="img/product-6.jpg" width="220" height="165" alt="Набор для путешествий">
+							<img src="../img/cat-product-6.jpg" width="220" height="165" alt="Набор для путешествий">
 						</a>
 					</p>
 					<p class="catalog-item-price">
